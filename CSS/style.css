@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    background-color: #fafad2;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 25px;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.menu li {
+
+    border-radius: 25px;
+    padding: 15px;
+    background-color: #1E90FF;
+    color: white;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+.textobanner {
+    color: white;
+    font-size: 35px;
+    font-family: 'Gowun Batang', serif;
+    text-align: center;
+}
+
+.textobanner strong {
+    color: #1E90FF;
+}
+
+.banner2 {
+    background-image: url(../IMG/banner.jpeg1.jpg);
+    padding: 15px;
+    background-repeat: repeat-y;
+    background-size: cover;
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    align-items: flex-end;
+}
+
+.titulos {
+    margin: 80px 0 0 145px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    display: flex;
+    
+    
+}
+
+
+.curiosidades {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.curiosidades .quadrado {
+   
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 450px;
+    overflow: hidden;
+}
+
+
+
+.curiosidades .quadrado img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 25px 0 0 0;
+}
+
+.descricao {
+    font-size: 33px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding: 20px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.redesocial {
+    background-color: #fafad2;
+    padding: 20px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.links {
+    list-style: none;
+}
+
+.geral {
+    display: flex;
+    justify-content: space-around;
+    line-height: 50px;
+    gap: 30px;
+}
+
+.rodape {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%
+}
+
+@media (max-width: 768px) {
+
+    .textobanner {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .curiosidades {
+        flex-direction: column;
+    }
+
+    .video {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 425px){
+    .home {
+        
+        flex-wrap: wrap;
+        }
+
+    .menu {
+       
+        font-size: 15px;
+    }
+       
+        .banner2 {
+        padding: 0px;
+    }
+
+    .titulos{
+       margin: 20px;
+
+    }
+
+    .curiosidades {
+        padding: 20px;
+        gap: 20px
+    }
+
+   .curiosidades .quadrado {
+     margin: 0;
+     width: 380px;
+
+   }
+
+    .quadrado img {
+      justify-content: center;
+    }
+    
+    .video {
+        padding: 20px;
+        margin: 20px 0 20px 0;
+    }
+
+    .redesocial{
+        margin-top: 0px;
+    }
+    .geral {
+        flex-direction: column;
+    }
+    
+   
+}
